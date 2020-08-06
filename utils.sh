@@ -16,10 +16,6 @@ function logwarn() {
   echo -e "$PURPLE`date +"%H:%M:%S"` $@$NC"
 }
 
-# https://stackoverflow.com/a/24067243
-function version_gt() {
-  test "$(printf '%s\n' "$@" | sort -V | head -n 1)" != "$1";
-}
 
 function set_kafka_client_tag()
 {
